@@ -2,7 +2,9 @@
 using namespace std;
 char matrix[3][3] = { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
 char player = 'X';
+char choice ='y';
 int n;
+
 void draw()
 {
     system("clear");
@@ -167,9 +169,11 @@ char Win()
 }
 int main()
 {
+bool quit = false;
+    {
     n = 0;
     draw();
-    while (1)
+    while (!quit && 1)
     {
         n++;
         input();
@@ -177,19 +181,44 @@ int main()
         if (Win() == 'X')
         {
             cout << "*** Congratz! [X] wins! ***" << endl;
+            char choice;
+            cout << "Would you like to play again? (y/n) ";
+            cin >> choice;
+            if(choice =='y'){
+                draw();
+            }else{
+                quit = true;
+            }
             break;
         }
         else if (Win() == 'O')
         {
             cout << "*** Congratz! [O] wins! ***" << endl;
+            char choice;
+            cout << "Would you like to play again? (y/n) ";
+            cin >> choice;
+            if(choice =='y'){
+                draw();
+            }else{
+                quit = true;
+            }
             break;
         }
         else if (Win() == '/' && n == 9)
         {
             cout << "It's a draw!" << endl;
+            char choice;
+            cout << "Would you like to play again? (y/n) ";
+            cin >> choice;
+            if(choice =='y'){
+                draw();
+            }else{
+                quit = true;
+            }
             break;
         }
         ChoosePlayer();
     }
+}
     return 0;
 }
