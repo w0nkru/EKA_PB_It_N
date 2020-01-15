@@ -6,7 +6,7 @@ int n;
 void draw()
 {
     system("clear");
-    cout << "Tic Tac Toe v1.0" << endl;
+    cout << "TTT by Marco" << endl;
     for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 3; j++)
