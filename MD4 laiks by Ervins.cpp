@@ -13,7 +13,10 @@ int main(){
 	if(time.length() != 8){
 		cout << "Ievadits nepareizs formats!\n\n";}
 	
-	else if(time[2] != ':' && time[5] != ':'){
+	else if(time[2] != ':'){
+		cout << "Ievadits nepareizs formats!\n\n";}
+	
+	else if(time[5] != ':'){
 		cout << "Ievadits nepareizs formats!\n\n";}
 	
 	else{
