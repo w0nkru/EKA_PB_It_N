@@ -11,7 +11,7 @@ int main(){
 		a2=0;
 		
 		for(b = a; b > 0; b /= 10)
-			a2 = a2 * 10 + b % 10;
+		a2 = a2 * 10 + b % 10;
 		
 		if(a == a2)
      	  	cout << a << endl;
