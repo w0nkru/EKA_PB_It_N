@@ -24,7 +24,6 @@ int guessing(string words[], int random_word){
 	// Punkti, uzminetie vardi u.c.
 	static int points = 0;
 	static int guessed_words = 0;
-	int characters = 0;
 	
 	// Aizpilda zvaigznisu lauku ar zvaigznem
 	for(int i = 0; i < word.length(); i++){
@@ -66,15 +65,15 @@ int guessing(string words[], int random_word){
 			points++;
 			cout << "Varda nav tada burta!\n";
 			system("Pause");}
-		else{
-			characters = 0;}
 		
 		// Parbauda vai vards ir uzminets un punktu nonemsana
 		if(strcmp(word_char, empty) == 0){
 			guessed_words++;
+
 			if(points < 5){
 				points = 0;
 				return 0;}
+
 			else{
 				points -= 5;
 				return 0;};}
@@ -121,7 +120,7 @@ void game(){
 		else{
 			guessed_words++;}
 		
-		if(i == 4){
+		if(i == 19){
 			system("cls");
 			cout << "Spele beigusies!\n";
 			cout << "Jus uzminejat visus vardus!\n\n";}
