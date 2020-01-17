@@ -13,12 +13,6 @@ int main(){
 	if(time.length() != 8){
 		cout << "Ievadits nepareizs formats!\n\n";}
 	
-	else if(time[2] != ':'){
-		cout << "Ievadits nepareizs formats!\n\n";}
-	
-	else if(time[5] != ':'){
-		cout << "Ievadits nepareizs formats!\n\n";}
-	
 	else{
 		for(int i = 0; i < time.length(); i++){
 			number = time[i] - '0';
@@ -38,7 +32,9 @@ int main(){
 					correct = 0;};}
 			
 			else if(i == 2 || i == 5){
-				continue;}
+				if(time[i] != ':'){
+					cout << "Ievadits nepareizs formats!\n\n";
+					correct = 0;};}
 			
 			else if(i == 3 || i == 6){
 				if(number < 0 || number > 5){
