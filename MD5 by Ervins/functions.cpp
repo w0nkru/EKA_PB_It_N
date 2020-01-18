@@ -508,13 +508,13 @@ void make_copy(){
 	if(data.is_open() && data_copy.is_open()){
 		while(getline(data, line)){
 			if(data.good()){
-		    	data_copy << line << endl;}
+		    	        data_copy << line << endl;}
 		    
-		    else{
+		        else{
 				fail = true;
 				break;}
 		    
-		    if(data_copy.good()){
+		        if(data_copy.good()){
 				continue;}
 			
 			else{
@@ -534,6 +534,7 @@ void make_copy(){
 	
 	
 	if(fail == true){
+                remove("data_copy.txt");
 		cout << "/nRadas problemas lasot/rakstot datubazi!\n";
 		system("Pause");
 		return;}
