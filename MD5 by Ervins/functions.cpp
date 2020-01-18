@@ -53,14 +53,14 @@ void add_entry(){
 						found = true;
 						cout << "Konta numurs jau tiek izmantots datubaze!\n";
 						break;}
-				};}
+				}
+                                data.close();}
 				
 			else{
+                                data.close();
                                 cout << "\nNeizdevas atvert datubazi!\n";
 		                system("Pause");
 				return;}
-				
-			data.close();
 		}
 		
 		if(cin.fail() == false && found == false){
