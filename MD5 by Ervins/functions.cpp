@@ -68,10 +68,11 @@ void add_entry(){
 	}
 	while(true);
 		
-	// Varda, uzvarda un balansa ievade	
+	// Varda, uzvarda ievade	
 	cout << "Uzvards: "; cin >> client.Surname;
 	cout << "Vards: "; cin >> client.Name;
-		
+	
+        // Balansa ievade
 	do{
 		cin.clear();
 		cin.ignore();
