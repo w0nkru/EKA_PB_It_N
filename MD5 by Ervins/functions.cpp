@@ -56,6 +56,8 @@ void add_entry(){
 				};}
 				
 			else{
+                                cout << "\nNeizdevas atvert datubazi!\n";
+		                system("Pause");
 				return;}
 				
 			data.close();
