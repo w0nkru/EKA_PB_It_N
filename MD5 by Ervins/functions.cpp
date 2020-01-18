@@ -321,10 +321,10 @@ void change_balance(){
                         if(fail == true){
 			        data.close();
 			        temp.close();
-                              remove("temp.txt");}
+                                remove("temp.txt");}
 
                         else{
-                              data.close();
+                                data.close();
 			        temp.close();
 			        remove("data.txt");
 			        rename("temp.txt", "data.txt");} 
