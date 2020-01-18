@@ -171,7 +171,7 @@ void remove_entry(){
 			return;}
 		
 		if(fail == true){
-			cout << "Radas problemas lasto/rakstot datubazi!\n";
+			cout << "Radas problemas lasot/rakstot datubazi!\n";
 			system("Pause");
 			return;}
 		
@@ -203,7 +203,7 @@ void print_all(){
 	if(data.is_open()){
 		while(getline(data, text)){
 			if(data.good()){
-		    	cout << text << endl;
+		    	        cout << text << endl;
 				continue;}
 			
 			else{
@@ -221,7 +221,7 @@ void print_all(){
 	
 	
 	if(fail == true){
-		cout << "\nRadas problemas lasto datubazi!\n";
+		cout << "\nRadas problemas lasot datubazi!\n";
 		system("Pause");
 		return;}
 	
@@ -265,7 +265,7 @@ void find_entry(){
 		
 		
 		if(fail == true){
-			cout << "Radas problemas lasto datubazi!\n";
+			cout << "Radas problemas lasot datubazi!\n";
 			system("Pause");
 			return;}
 		
@@ -477,7 +477,7 @@ void count_entries(){
 	
 	
 	if(fail == true){
-		cout << "/nRadas problemas lasto datubazi!\n";
+		cout << "/nRadas problemas lasot datubazi!\n";
 		system("Pause");
 		return;}
 	
@@ -528,7 +528,7 @@ void make_copy(){
 	
 	
 	if(fail == true){
-		cout << "/nRadas problemas lasto/rakstot datubazi!\n";
+		cout << "/nRadas problemas lasot/rakstot datubazi!\n";
 		system("Pause");
 		return;}
 	
