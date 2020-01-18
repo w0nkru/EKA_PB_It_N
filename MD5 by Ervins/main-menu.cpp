@@ -9,15 +9,15 @@ int main(){
 		system("cls");
 		cout << "\tGalvena izvelne\n";
 		cout << "--------------------------------\n";
-		cout << "[1] Pievienot ierakstu.[OK]\n";
-		cout << "[2] Dzest ierakstu.[OK]\n";
-		cout << "[3] Izvadit visus ierakstus.[OK]\n";
-		cout << "[4] Atrast ierakstu.[OK]\n";
+		cout << "[1] Pievienot ierakstu.\n";
+		cout << "[2] Dzest ierakstu.\n";
+		cout << "[3] Izvadit visus ierakstus.\n";
+		cout << "[4] Atrast ierakstu.\n";
 		cout << "[5] Izmainit konta balansu.\n";
-		cout << "[6] Izvadit paradniekus.[OK]\n";
-		cout << "[7] Saskaitit ierakstus.[OK]\n";
-		cout << "[8] Izveidot datu bazes kopiju.[OK]\n";
-		cout << "[9] Iziet.[OK]\n";
+		cout << "[6] Izvadit paradniekus.\n";
+		cout << "[7] Saskaitit ierakstus.\n";
+		cout << "[8] Izveidot datu bazes kopiju.\n";
+		cout << "[9] Iziet.\n";
 		
 		for(int i = 0; i != 1;){
 			cout << "Izvele: "; cin >> menu;
