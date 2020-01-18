@@ -318,10 +318,16 @@ void change_balance(){
 					fail = true;
 					break;}
 			}
-			data.close();
-			temp.close();
-			remove("data.txt");
-			rename("temp.txt", "data.txt");
+                        if(fail == true){
+			        data.close();
+			        temp.close();
+                              remove("temp.txt");}
+
+                        else{
+                              data.close();
+			        temp.close();
+			        remove("data.txt");
+			        rename("temp.txt", "data.txt");} 
 		}
 		
 		else{
